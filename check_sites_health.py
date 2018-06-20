@@ -1,5 +1,10 @@
 def load_urls4check(path):
-    pass
+    try:
+        check_list = open(path, 'r')
+        return check_list
+    except ValueError:
+        return False
+
 
 def is_server_respond_with_200(url):
     pass
